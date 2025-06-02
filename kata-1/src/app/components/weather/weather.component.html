@@ -7,4 +7,12 @@
   Température :
   <strong>{{ kelvinToCelsius(WeatherData.main.temp) }} °C</strong>
 </p>
+<p>{{ WeatherData.weather[0].description }}</p>
+<img
+  src="http://openweathermap.org/img/wn/{{
+    WeatherData.weather[0].icon
+  }}@2x.png"
+  alt="{{ WeatherData.weather[0].description }}"
+/>
+
 }
