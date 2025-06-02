@@ -1,0 +1,10 @@
+@if (weather$ | async; as WeatherData) {
+<p>
+  Ville : <strong>{{ WeatherData.name }}</strong>
+</p>
+
+<p>
+  Température :
+  <strong>{{ kelvinToCelsius(WeatherData.main.temp) }} °C</strong>
+</p>
+}
