@@ -11,7 +11,6 @@ export class WeatherComponent {
   private weatherService = inject(WeatherService);
 
   public weather$ = this.weatherService.getWeather('Paris');
-
   kelvinToCelsius(kelvin: number | undefined): number | undefined {
     if (kelvin === undefined) {
       return undefined;
