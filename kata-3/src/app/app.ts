@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Message } from './components/message/message';
+import { User } from './components/user/user';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Message],
+  imports: [RouterOutlet, User],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected title = 'kata-3';
