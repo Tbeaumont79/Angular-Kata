@@ -6,5 +6,6 @@ import { UsersResponse } from '../types/Users';
   providedIn: 'root',
 })
 export class UserService {
-  data = httpResource<UsersResponse>(() => 'https://dummyjson.com/users');
+  data = httpResource<UsersResponse>(() => 'https://dummyjson.com/users', {
+  });
 }
